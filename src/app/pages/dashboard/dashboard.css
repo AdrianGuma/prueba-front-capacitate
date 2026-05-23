@@ -1,0 +1,679 @@
+body {
+    background: #f6f8fb;
+}
+
+/* PERFIL */
+
+.profile-avatar{
+
+    width:72px;
+    height:72px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:1.7rem;
+    font-weight:600;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7a1c1c,
+            #a52a2a
+        );
+
+    box-shadow:
+        0 10px 25px rgba(122,28,28,.18);
+}
+
+/* LABEL */
+
+.profile-label{
+
+    font-size:.70rem;
+
+    font-weight:700;
+
+    letter-spacing:.16rem;
+
+    text-transform:uppercase;
+
+    color:#94a3b8;
+
+    margin:0;
+}
+
+/* NOMBRE */
+
+.profile-name{
+
+    font-size:2.1rem;
+
+    font-weight:500;
+
+    letter-spacing:-0.05rem;
+
+    color:#284b63;
+
+    line-height:1.05;
+
+    margin:0;
+}
+
+/* EMAIL */
+
+.profile-email{
+
+    font-size:.98rem;
+
+    font-weight:500;
+
+    color:#5c7c92;
+
+    letter-spacing:-0.01rem;
+}
+
+/* CARDS */
+
+.card {
+    border-radius: 22px !important;
+}
+
+.course-card {
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, .10) !important;
+}
+
+.card img {
+    transition: transform .3s ease;
+}
+
+.course-card:hover img {
+    transform: scale(1.03);
+}
+
+/* FORMULARIOS */
+
+.form-control,
+.form-select {
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    font-size: .95rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #14b8a6;
+    box-shadow: 0 0 0 .18rem rgba(20, 184, 166, .14);
+}
+
+/* DROPDOWN */
+
+.dropdown-menu {
+    min-width: 240px;
+    border-radius: 18px;
+}
+
+.dropdown-item {
+    font-weight: 500;
+    transition: all .2s ease;
+}
+
+.dropdown-item:hover {
+    background: #f1f5f9;
+    transform: translateX(3px);
+}
+
+/* PROGRESO */
+
+.progress {
+    background: #eef2f7;
+    border-radius: 999px;
+}
+
+.progress-bar {
+    transition: width .6s ease;
+    border-radius: 999px;
+}
+
+/* BADGES */
+
+.badge {
+    font-weight: 600;
+    padding: .45rem .75rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+    .profile-avatar {
+        width: 64px;
+        height: 64px;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* BOTÓN MENÚ */
+
+.minimal-menu-btn{
+
+    width:48px;
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#0f172a;
+
+    font-size:1.25rem;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    box-shadow:
+        0 4px 18px rgba(15,23,42,.06);
+
+    transition:all .25s ease;
+}
+
+.minimal-menu-btn:hover{
+
+    transform:translateY(-2px);
+
+    background:#f8fafc;
+
+    box-shadow:
+        0 10px 24px rgba(15,23,42,.10);
+}
+
+/* ================================================= */
+/* INPUTS MODERNOS */
+/* ================================================= */
+
+.custom-input-group{
+
+    position:relative;
+}
+
+.custom-input{
+
+    height:58px;
+
+    border:none !important;
+
+    border-radius:18px !important;
+
+    padding-left:1.2rem;
+
+    padding-right:4.2rem;
+
+    background:#f8fafc;
+
+    font-weight:500;
+
+    box-shadow:
+        0 2px 10px rgba(15,23,42,.04);
+
+    transition:all .25s ease;
+}
+
+.custom-input:focus{
+
+    background:white;
+
+    box-shadow:
+        0 0 0 .2rem rgba(20,184,166,.12);
+}
+
+/* ================================================= */
+/* BOTÓN ICONO */
+/* ================================================= */
+
+.input-icon-btn{
+
+    position:absolute;
+
+    right:10px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:40px;
+    height:40px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#0ea5e9;
+
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:all .25s ease;
+}
+
+.input-icon-btn:hover{
+
+    transform:
+        translateY(-50%)
+        scale(1.05);
+
+    background:#0284c7;
+}
+
+/* ================================================= */
+/* MENÚ MODERNO */
+/* ================================================= */
+
+.modern-menu{
+
+    width:280px;
+
+    border-radius:24px !important;
+
+    background:white;
+
+    box-shadow:
+        0 18px 40px rgba(15,23,42,.08);
+
+    padding:.8rem;
+}
+
+/* LABELS */
+
+.menu-label{
+
+    font-size:.72rem;
+
+    font-weight:600;
+
+    letter-spacing:.08rem;
+
+    text-transform:uppercase;
+
+    color:#94a3b8;
+
+    padding:.8rem 1rem .5rem;
+}
+
+/* ITEMS */
+
+.modern-item{
+
+    display:flex;
+    align-items:center;
+
+    border-radius:16px;
+
+    padding:.9rem 1rem;
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+    color:#64748b;
+
+    transition:all .22s ease;
+}
+
+.modern-item i{
+
+    font-size:1rem;
+
+    color:#94a3b8;
+
+    transition:all .22s ease;
+}
+
+.modern-item:hover{
+
+    background:#f8fafc;
+
+    color:#0f172a;
+
+    transform:translateX(3px);
+}
+
+.modern-item:hover i{
+
+    color:#0ea5e9;
+}
+
+/* ================================================= */
+/* TIPOGRAFÍA INPUTS */
+/* ================================================= */
+
+.custom-input{
+
+    font-size:.96rem !important;
+
+    font-weight:500;
+
+    color:#334155 !important;
+
+    letter-spacing:-0.01rem;
+}
+
+/* PLACEHOLDER */
+
+.custom-input::placeholder{
+
+    color:#94a3b8 !important;
+
+    font-weight:500;
+}
+
+/* SELECT */
+
+.form-select{
+
+    color:#475569 !important;
+
+    font-weight:500;
+
+    cursor:pointer;
+}
+
+/* OPTION */
+
+.form-select option{
+
+    color:#334155;
+
+    font-weight:500;
+}
+
+/* INPUT HOVER */
+
+.custom-input:hover{
+
+    background:#ffffff;
+
+    box-shadow:
+        0 6px 18px rgba(15,23,42,.06);
+}
+
+/* INPUT FOCUS */
+
+.custom-input:focus{
+
+    color:#0f172a !important;
+}
+
+/* ================================================= */
+/* MODAL MODERNO */
+/* ================================================= */
+
+.modern-modal{
+
+    border-radius:28px;
+
+    background:
+        rgba(255,255,255,.78);
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+
+    box-shadow:
+        0 25px 60px rgba(15,23,42,.18);
+}
+
+/* HEADER MODAL */
+
+.modern-modal .p-5{
+
+    padding:2.2rem !important;
+}
+
+/* BOTÓN CURSO */
+
+.modern-course-btn{
+
+    border:none;
+
+    border-radius:999px;
+
+    padding:1rem 2.2rem;
+
+    background:#f1f5f9;
+
+    color:#475569;
+
+    font-weight:600;
+
+    letter-spacing:-0.01rem;
+
+    transition:all .25s ease;
+}
+
+.modern-course-btn:hover{
+
+    background:#e2e8f0;
+
+    color:#0f172a;
+
+    transform:translateY(-2px);
+}
+
+/* TEXTO MODAL */
+
+.modal h2{
+
+    letter-spacing:-0.03rem;
+}
+
+/* FONDO OSCURO */
+
+.modal-backdrop.show{
+
+    opacity:.35;
+}
+
+/* ================================================= */
+/* STATS */
+/* ================================================= */
+
+.stats-card{
+
+    position:relative;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:2rem;
+
+    height:100%;
+
+    box-shadow:
+        0 4px 18px rgba(15,23,42,.05);
+
+    transition:all .25s ease;
+}
+
+.stats-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 14px 30px rgba(15,23,42,.08);
+}
+
+/* LÍNEA */
+
+.stats-line{
+
+    width:42px;
+    height:4px;
+
+    border-radius:999px;
+
+    background:#284b63;
+
+    margin-bottom:1.2rem;
+}
+
+/* LABEL */
+
+.stats-label{
+
+    font-size:.88rem;
+
+    font-weight:600;
+
+    color:#7c93a6;
+
+    margin-bottom:.5rem;
+}
+
+/* NÚMERO */
+
+.stats-number{
+
+    font-size:2rem;
+
+    font-weight:600;
+
+    letter-spacing:-0.05rem;
+
+    margin:0;
+}
+
+/* COLORES STATS */
+
+.stats-blue{
+    color:#2563eb;
+}
+
+.stats-green{
+    color:#16a34a;
+}
+
+.stats-cyan{
+    color:#0ea5e9;
+}
+
+.stats-yellow{
+    color:#f59e0b;
+}
+
+/* ================================================= */
+/* CURSO LABEL */
+/* ================================================= */
+
+.course-mini-label{
+
+    font-size:.72rem;
+
+    font-weight:700;
+
+    letter-spacing:.10rem;
+
+    text-transform:uppercase;
+
+    color:#94a3b8;
+
+    margin-bottom:.6rem;
+}
+
+/* ================================================= */
+/* TÍTULO CURSO */
+/* ================================================= */
+
+.course-title{
+
+    font-size:1.15rem;
+
+    font-weight:600;
+
+    color:#284b63;
+
+    letter-spacing:-0.03rem;
+
+    line-height:1.3;
+
+    margin-bottom:1rem;
+}
+
+/* ================================================= */
+/* BADGE STATUS */
+/* ================================================= */
+
+.course-status-badge{
+
+    background:
+        rgba(22,163,74,.12);
+
+    color:#16a34a;
+
+    border-radius:999px;
+
+    padding:.45rem .8rem;
+
+    font-size:.76rem;
+
+    font-weight:700;
+}
+
+/* ================================================= */
+/* LINK DETALLE */
+/* ================================================= */
+
+.course-link{
+
+    display:flex;
+    align-items:center;
+    gap:.3rem;
+
+    font-size:.92rem;
+
+    font-weight:600;
+
+    color:#284b63;
+
+    transition:all .22s ease;
+}
+
+.course-link i{
+
+    font-size:1.2rem;
+
+    transition:all .22s ease;
+}
+
+.course-card:hover .course-link{
+
+    color:#0ea5e9;
+}
+
+.course-card:hover .course-link i{
+
+    transform:translateX(4px);
+}

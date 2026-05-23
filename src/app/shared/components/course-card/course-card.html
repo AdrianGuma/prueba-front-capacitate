@@ -1,0 +1,100 @@
+<div
+    class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 course-card"
+    role="button"
+    tabindex="0"
+    (click)="openPreview()"
+    data-bs-toggle="modal"
+    data-bs-target="#courseModal"
+>
+
+    <div
+        class="p-3"
+        [style.background]="item.course.sector.colorTheme"
+    >
+
+        <img
+            [src]="item.course.imageUrl"
+            class="img-fluid d-block mx-auto"
+            style="height: 180px; object-fit: contain;"
+            [alt]="item.course.name"
+        >
+
+    </div>
+
+    <div class="card-body p-4 d-flex flex-column">
+
+        <div class="d-flex justify-content-between align-items-start mb-3">
+
+            <span
+                class="badge rounded-pill"
+                [style.background]="item.course.sector.colorTheme"
+            >
+                {{ item.course.sector.name }}
+            </span>
+
+            @if (item.advance === 100) {
+
+                <span class="course-status-badge">
+                    Completado
+                </span>
+
+            }
+
+        </div>
+
+        <p class="course-mini-label">
+            Curso disponible
+        </p>
+
+        <h5 class="course-title">
+            {{ item.course.name }}
+        </h5>
+
+        <p class="text-muted small mb-2">
+            Avance del curso
+        </p>
+
+        <div class="progress mb-3" style="height: 10px;">
+
+            <div
+                class="progress-bar"
+                [style.width.%]="item.advance"
+                [style.background]="item.course.sector.colorTheme"
+            ></div>
+
+        </div>
+
+        <div class="d-flex justify-content-between mb-3">
+
+            <small class="text-muted">
+                {{ item.advance }}%
+            </small>
+
+            <small class="fw-semibold">
+                {{ item.scoreCourse }}/10
+            </small>
+
+        </div>
+
+        <div class="mt-auto">
+
+            <small class="text-muted d-block">
+                Inscripción:
+                {{ item.inscripcionDate | date:'mediumDate' }}
+            </small>
+
+            <small class="text-muted d-block">
+                Certificación:
+                {{ item.certificationDate | date:'mediumDate' }}
+            </small>
+
+            <div class="course-link mt-4">
+                Ver detalle
+                <i class="bi bi-arrow-right-short"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
